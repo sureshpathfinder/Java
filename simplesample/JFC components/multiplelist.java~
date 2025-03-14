@@ -1,0 +1,27 @@
+import javax.swing.*;
+import java.awt.*;
+import java.util.*;
+public class multipleList extends JPanel
+{
+JList list;
+public multipleList()
+{
+
+String arr[]={"one","two","three","four","five","six","seven","eight","nine","ten"};
+list=new JList();
+list.setListData(arr);
+list.setSelectedIndex(0);
+int mode=ListSelectionModel.SINGLE_INTERVAL_SELECTION;
+list.setSelectionMode(mode);
+add(new JScrollPane(list),"Center");
+}
+public static void main(String args[])
+{
+JFrame jf=new JFrame("List Selection Example");
+multipleList m1=new multipleList();
+jf.setForeground(Color.black);
+jf.setBackground(Color.lightGray);
+jf.getContentPane().add(m1,"Center");
+jf.setVisible(true);
+}
+}
