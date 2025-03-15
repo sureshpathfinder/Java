@@ -1,0 +1,17 @@
+import java.util.*;
+public class Iter
+{
+  public static void main(String[] args) 
+  {
+                ArrayList c = new ArrayList();
+                c.add("rose");
+                c.add("Lotus");
+                c.add("Marigold");
+                c.add("Jasmine");
+                Iterator ir = c.iterator();
+
+                while (ir.hasNext()) {
+                        System.out.println(ir.next());
+                }
+        }
+}

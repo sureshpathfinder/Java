@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+class Arith_Excep
+{
+  public static void main(String ar[])
+  {
+    Scanner obj=new Scanner(System.in);
+    char c=(char)System.in.read();
+    int a=obj.nextInt();
+    String s=c+a;
+    System.out.println(s);
+  }
+}

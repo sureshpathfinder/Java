@@ -1,0 +1,40 @@
+Frames   (puttting different webpage ina single webpage)
+-------
+1.  to start
+<frameset>
+</frameset> within head tags
+
+2. to insert a webpage
+<FRAMESET COLS/rows="50%,50%">
+  <FRAME SRC="kar.html">
+  <FRAME SRC="jo.html">
+</FRAMESET>
+
+3. 
+<FRAMESET COLS="50,*,2*">
+  <FRAME SRC="kanya.html">
+  <FRAME SRC="kar.html">
+  <FRAME SRC="jo.html">
+</FRAMESET>
+
+The above statement saysMake 3 frames. 
+Make the first 50 pixels wide. 
+The rest divide between frames 2 and 3 
+but make frame 3 twice as big as frame 2. 
+
+4.Diving frames within frames
+<FRAMESET COLS="50,*,2*">
+  <FRAME SRC="kar.html">
+  <FRAME SRC="jo.html">
+  <FRAMESET ROWS="50%,50%">
+    <FRAME SRC="kanya.html">
+    <FRAME SRC="anu.html">
+  </FRAMESET>
+</FRAMESET>
+
+
+
+
+
+
+

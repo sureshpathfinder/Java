@@ -1,0 +1,21 @@
+import java.util.*;
+
+public class array2
+{
+  public static void main(String args[])
+  {
+    int i;
+    int[] a;   // Another way to declare an Array
+    a=new int[5];
+    Scanner s=new Scanner(System.in);
+    System.out.println("Length of an array:" +a.length);
+    for(i=0;i<5;i++)
+    {
+      a[i]=s.nextInt();
+    }
+    for(i=0;i<5;i++)
+    {
+      System.out.println(a[i]);
+    }
+  }
+}

@@ -1,0 +1,26 @@
+There are two ways to synchronized the execution of code:
+
+   1. Synchronized Methods
+           
+   2. Synchronized Blocks (Statements)
+
+Synchronized Methods
+
+If any method is specified with the keyword synchronized then this method of an object is only executed by one thread at a time. A any thread want to execute the synchronized method, firstly it has to obtain the objects lock. Acquire the method is simply by calling the method. If the lock is already held by another thread, then calling thread has to wait. 
+     
+Synchronized methods are useful in those situations where methods can manipulate the state of an object in ways that can corrupt the state if executed concurrently. Stack implementations usually define the two operations push and pop of elements as synchronized, that’s why pushing and popping are mutually exclusive operations. For Example if several threads were sharing a stack, if one thread is popping the element on the stack then another thread would not be able to pushing the element on the stack.
+
+----------------------------------------
+
+
+Synchronized Blocks (Statements)
+
+A synchronized statement is another way to create synchronized code. Synchronized statements must specify the object that provides the intrinsic lock. The synchronized block allows execution of arbitrary code to be synchronized on the lock of an arbitrary object.
+
+General form of synchronized block is:
+synchronized (object reference expression)
+{
+code block..
+}
+
+----------------------------------------

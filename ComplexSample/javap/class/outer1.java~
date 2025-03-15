@@ -1,0 +1,26 @@
+class outer1 
+{
+public static void main(String args[])
+{
+outer o = new outer();
+o.test();
+}
+}
+class outer
+{
+int o = 100;
+
+void test()
+{
+Inner i = new Inner();
+i.disp();
+}
+// this is an inner class
+class Inner 
+{
+void disp() 
+{
+System.out.println("display: o = " + o);
+}
+}
+}

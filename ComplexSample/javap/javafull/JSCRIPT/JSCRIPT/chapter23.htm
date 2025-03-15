@@ -1,0 +1,33 @@
+<html>
+ <head>
+  <title>Radio Button</title>
+  <script language="JavaScript">
+     function newwin()
+     {
+        winopen = open("","","height=200","width=200")
+        winopen.document.write("The name of the user is " + "<br>")
+        winopen.document.write(myform.usrname.value + "<br>")
+        winopen.document.write("The type of the object is " + "<br>")
+        winopen.document.write(myform.usrname.type + "<br>")
+        winopen.document.write("The number of elements in the radio object is " + "<br>")
+        winopen.document.write(myform.stream.length + "<br>")
+        winopen.document.write("The second element is " + "<br>")
+        winopen.document.write(myform.stream[1].value)
+     }
+  </script>
+ </head>
+
+ <body>
+    <h2>This example demonstrates the use of the radio object</h2>
+    <form name="myform">
+         <h4><i>Enter the name</i></h4>
+         <input type="text" name="usrname" onBlue() = "newwin()">
+         <h4><i>Choose your engineering degree stream</i></h4>
+         <input type="radio" name="stream" value="Mechanical">Mechanical
+         <input type="radio" name="stream" value="Computer Science">Computer Science
+         <input type="radio" name="stream" value="Electrical">Electrical
+         <input type="radio" name="stream" value="Electronics">Electronics <br><p>
+         <input type="button" value="Properties of form elements" onClick="newwin()"></p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,28 @@
+class M_super
+{
+  public static void main(String a[])
+  {
+    Bsuper good=new Bsuper();
+  }
+}
+
+class Asuper
+{
+  int a;
+  Asuper(int aa);
+  {
+    a=aa;
+  }
+}
+
+class Bsuper extends Asuper
+{
+  int b;
+  
+  Bsuper()
+  {
+    super(10);
+    b=20;
+  }
+}
+

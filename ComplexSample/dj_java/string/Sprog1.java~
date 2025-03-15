@@ -1,0 +1,8 @@
+class Sprog1
+{
+  public static void main(String args[])
+  {
+    String s="Welcome to the world of JAVA";
+    System.out.println(s);
+  }
+}

@@ -1,0 +1,33 @@
+<html>
+ <head>
+  <title>Chapter 16</title>
+
+ <script language="JavaScript">
+   function newwin()
+   {
+//attributes scrollbars, resizable, status
+     winopen = open("","","height=300, width=600, menubar=1, toolbar=yes, directories=1, location=1")
+     with(winopen.document)
+     {
+      open("text/html")
+      write("<html><head><title>New Window</title></head>")
+      write("<body bgcolor='red'>")
+      write("This is a new window opened using javascript")
+      write("</body></html>")
+     }
+   }
+
+   function closewin()
+   {
+    winopen.close()
+   }
+ </script> 
+ </head>
+
+ <body>
+  <form> 
+    <input type="Button" value="Open a new Window" onClick = "newwin()">
+    <input type="Button" value = "close the window" onClick = "closewin()">
+  </form> 
+ </body>
+</html>

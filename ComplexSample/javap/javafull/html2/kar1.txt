@@ -1,0 +1,112 @@
+
+Basics
+------
+
+1.Make text bold
+	<B>xxxxx</B> 
+
+2. Make italics 
+<I>xxxxx</I> 
+
+3. Underlining
+<U>xxxxx</U> 
+
+4. Monospaced font
+<TT>xxxxx</TT> 
+
+5. Change font size (sizes:1-7)
+<FONT SIZE=5>xxxxx</FONT> 
+
+6. Change the font name (face)
+<FONT FACE="NIFTY FONT">xxxxx</FONT> 
+
+7. Change the font color
+<FONT COLOR="#0000FF"> xxxxx</FONT> 
+
+Background colors
+-----------------
+
+1.<BODY BGCOLOR="#xxxxxx"> 
+
+ Change text, link, etc color for whole page 
+<BODY BGCOLOR="#xxxxxx" TEXT="#xxxxxx" LINK="#xxxxxx" VLINK="#xxxxxx"
+ALINK="#xxxxxx">
+ 
+2. Line breaks <BR> 
+
+3. Paragraph break <P> 
+ 
+4.Six main special characters 
+&nbsp; ( non-breaking space) 
+&lt; (< less-than symbol) 
+&gt; (> greater-than symbol) 
+&amp; (& ampersand) 
+&quot; (" quotation mark) 
+&shy; (­ soft hyphen) 
+
+5. Multiple blank lines &nbsp;<BR> 
+ 
+Images
+------
+
+1.Background images 
+<BODY BACKGROUND="xxxxx.gif"> 
+(or .jpg) 
+ 
+2.Inserting images 
+<IMG SRC="xxxxx.gif" WIDTH=123 HEIGHT=456> 
+ 
+3.Making an image a link
+<A HREF="http://xxxxx"><IMG SRC="xxxxx.gif" WIDTH=123 HEIGHT=456></A> 
+  
+4.Get rid of the blue border around an image link
+<A HREF="http://xxxxx"> <IMG SRC="xxxxx.gif" WIDTH=123 HEIGHT=456 BORDER=O>
+</A>
+ 
+Links
+-----
+
+1.Add a link to another html document <A HREF="xxxxx.html">abcdefg</A> 
+
+2.Add an email link
+<A HREF="mailto:xxxxx@xxx.xxx"> abcdefg</A> 
+
+3. Making wesite link
+<A HREF="http://xxxxx">xxxxx</A> 
+
+4. Link to a particular section of a page <A NAME="upabit">Add</A> 
+<A HREF="lesson04.html#upabit">here</A> 
+
+Format
+------
+1.Centering stuff <CENTER>xxxxx</CENTER> 
+ 
+2.Line breaks <BR> 
+ 
+3.Paragraph break <P> 
+
+4. Pull in your margins with <BLOCKQUOTE> 
+
+5. Ordered and Unordered lists
+<UL type="square/circle"> (or OL type="A/a/i/I")
+<LI>List item
+</UL>
+ 
+6.  Definition list
+<DL>
+<DT>Definition title
+<DD>Definition item
+</DL>
+ 
+7. Horizontal Rule
+<HR ALIGN=left|right|center WIDTH=80% SIZE=3 NOSHADE> 
+ 
+8.The <PRE>formatting tag 
+
+9.Comment tag <!--This is a comment-->
+
+10 .<marquee direction=up|down|left|right>xxxxxx</marquee> Scroll the text in the given direction
+
+11. <sup>XXX</sup> It will print in superscript form
+
+12. <sub>XXX</sub> It will print in subscript form

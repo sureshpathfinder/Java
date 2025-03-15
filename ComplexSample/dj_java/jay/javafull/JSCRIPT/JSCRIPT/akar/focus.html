@@ -1,0 +1,26 @@
+<html>
+<head>
+<script language="javascript">
+function fun()
+{
+frm.txt3.value=parseInt(frm.txt1.value)+parseInt(frm.txt2.value);
+}
+function fun1()
+{
+//alert("hello");
+
+frm.txt1.value="";
+frm.txt2.value="";
+frm.txt3.value="";
+frm.txt1.focus();
+}
+</script>
+
+</head>
+<form name=frm>
+<input type=text name=txt1>
+<input type=text name=txt2>
+<input type=text name=txt3 onfocus=fun(); onblur=fun1();>
+</form>
+</html>
+

@@ -1,0 +1,22 @@
+class Thr_Method
+{
+  public static void main(String args[ ])
+  {
+    Thread r=Thread.currentThread() ; //main Thread
+     System.out.println("Name="+r.setName());    
+      for ( int i=0; i<=10; i++)
+      {
+        System.out .println( "Count is: "+i );
+        try
+        {
+          r.sleep(1000);
+          //Thread.sleep(1000);
+        }
+        catch(Exception ex)
+        {
+          System.out .println( "Main Thread Interrupted"+ex ) ;
+        }
+      }
+      System.out .println( "Finished . . . " ) ;
+  }
+}

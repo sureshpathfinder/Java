@@ -1,0 +1,77 @@
+<html>
+<head>
+<script language ="javascript">
+        function  fun()
+        {
+             if(text1.value =="" || text1.value == null)
+             {
+             alert("Give empno");
+             text1.focus();
+             }
+         else if(text2.value==null || text2.value=="")
+             {
+             window.alert("give empname");
+             text2.focus();
+             }
+        else if(text3.value==null || text3.value=="")
+             {
+             window.alert("give empsal");
+             text3.focus();
+             }
+             else if((!cb1.checked) && (!cb2.checked))
+             {
+             window.alert("Have to select Marital Status");
+             cb1.focus();
+             }
+        }
+        function fun1()
+        {
+          if(cb1.checked)
+               {
+                    cb2.disabled=true;
+                    text4.disabled=false;
+                    text4.focus();
+               }
+          else 
+               {
+                    cb2.disabled=false;
+                    cb2.focus();
+                    text4.disabled=true;
+        
+               }
+        }
+        function fun2()
+        {
+              if(cb2.checked)
+              {
+                    text4.disabled=true;
+                    cb1.disabled=true;
+                    submit.focus();
+               }
+              else
+              {
+                   cb1.disabled=false;                  
+                   cb1.focus();
+                   text4.disabled=false;
+              }
+        }
+        function msg()
+        {
+             text4.disabled=true;
+        }
+
+</script>
+</head>
+<body  onLoad=alert('welcome') onunload=alert('bye')>
+<pre>              
+Empno          <input  type=text  name="text1">
+Empname        <input  type = text name="text2">
+Empsal         <input  type = text  name="text3">
+Marital Status <br> 
+Married        <input type=checkbox  name="cb1" onclick='fun1()'>
+Unmarried      <input type=checkbox  name="cb2" onclick='fun2()'>
+Children       <input type=text  name="text4">
+<input type=submit   name = submit onClick='fun()'>
+</pre>
+</body>
+</html>

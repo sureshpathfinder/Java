@@ -1,0 +1,8 @@
+class finalmethod
+{
+  public void method1() 
+  {
+  System.out.println("Method1");
+  }
+
+  

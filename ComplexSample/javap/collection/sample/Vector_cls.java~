@@ -1,0 +1,28 @@
+import java.util.Vector;
+import java.util.Collections;
+
+public class Vector_cls
+
+ {
+
+  public static void main(String[] args)
+
+ {
+   
+    //create a Vector object
+    Vector v = new Vector();
+   
+    //Add elements to Vector
+    v.add(new int("500"));
+    v.add(new int("745"));
+    v.add(new int("842"));
+    v.add(new int("900"));
+    v.add(new int("567"));
+   
+   
+   
+    Object obm = Collections.max(v);
+   
+    System.out.println("Maximum Element of Java Vector is : " + obm);
+  }
+}

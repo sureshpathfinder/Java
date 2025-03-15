@@ -1,0 +1,24 @@
+<html>
+<head>
+<script language ="javascript">
+      function f()
+      {
+	
+	var v =window.prompt("enter ur name",document.cookie);
+	document.cookie=v;
+	if(confirm(v))
+	{
+      		alert(v);
+	}
+	else 
+	{
+		f();
+	}
+     }
+</script>
+</head>
+<body>
+   <input type =button value ="click" onclick ="f();">
+</body>
+</html>
+<HTML>

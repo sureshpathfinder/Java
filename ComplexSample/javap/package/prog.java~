@@ -1,0 +1,12 @@
+import func.calc.*;
+class prog
+{
+  public static void main(String ar[])
+  {
+    System.out.println("Importing Package");
+    calc c=new calc();
+    System.out.println("Square of 3="+c.square(3));
+  }
+}
+
+   

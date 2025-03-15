@@ -1,0 +1,11 @@
+import java.util.*;
+class calendar
+{
+        public static void main(String args[])
+        {
+               /* String month[]={"Jan","Feb","Mar","Apr","May","Jun","Jul",
+                                 "Aug","Sep","Oct","Nov","Dec"};*/
+                GregorianCalendar g=new GregorianCalendar();
+                System.out.println(g.get(Calendar.MONTH));
+        }
+}

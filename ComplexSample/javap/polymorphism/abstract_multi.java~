@@ -1,0 +1,36 @@
+class abstract_multi
+{
+  public static void main(String ar[])
+  {
+    Win a=new Win();
+    a.hai();
+    a.display1();
+     Win2 a=new Win2();
+    a.hai();
+    a.display1();
+    System.out.println("program");
+  }
+}
+abstract class abs{
+public void display(){
+}
+public abstract void display1();
+
+}
+public class win extends abs{
+
+public void hai(){
+}
+
+public void display1(){
+}
+
+}
+class win2 extends abs{
+public void display1(){
+}
+
+public void display(){
+}
+}
+

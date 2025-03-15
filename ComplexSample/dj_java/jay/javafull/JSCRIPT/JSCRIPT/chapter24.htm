@@ -1,0 +1,32 @@
+<html>
+ <head>
+  <title>
+    Window Object
+  </title>
+  
+  <script language="JavaScript">
+    var timer
+     function stime()
+     {
+ 
+      timer = setTimeout("alert('it is 5 seconds after you have clicked')",5000)
+     }
+     
+     function ctime()
+     {
+       clearTimeout(timer)
+       alert("The timer has been cleared")   
+     }
+  </script>
+ </head>
+ 
+ <body>
+   <h2>This program demonstrates the use of setTimeout() and clearTimeout methods</h2>
+   <form>
+    <h3>Click the button to see alert box after 5 seconds</h3><br>
+    <input type="button" value="SetTime" onClick="stime()"><br>
+      <h3>Click the button to clear timer</h3><br>
+    <input type="button" value="ClearTimer" onClick="ctime()"><br>
+   </form>
+ </body>
+</html>

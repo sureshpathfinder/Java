@@ -1,0 +1,26 @@
+<html>
+<head>
+<script language="javascript">
+function fun1()
+{
+x=window.prompt("Enter the name");
+y=window.prompt("Enter the date");
+document.cookie=x+":"+y;
+alert("cookiecreated");
+}
+function fun2()
+{
+var c=document.cookie;
+document.write(c);
+}
+</script>
+<body>
+<input type=button value="CreateCookie" onclick=fun1();>
+<input type=button value="ShowCookie" onclick=fun2();>
+<!--
+	to store the datas permanently in the hard disk
+so that even after switching off the system we can retrive it
+-->
+</body>
+</html>
+

@@ -1,0 +1,24 @@
+<html>
+<head>
+<script language="javascript">
+setInterval("call();",1000);
+function call()
+{
+var time=new Date();
+dd=time.getHours()+":"+time.getMinutes()+":"+time.getSeconds();
+frm.txt.value=dd;
+}
+var d=new Date();
+alert(d.getDate());
+alert(d.getMonth());
+alert(d.getYear());
+alert(d.getSeconds());
+
+</script>
+</head>
+<body onload=call();>
+<form name=frm>
+<input type=text name=txt>
+</form>
+</body>
+</html>

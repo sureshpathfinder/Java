@@ -1,0 +1,25 @@
+<html>
+ <head>
+  <title>Chapter 17</title>
+
+ <script language="JavaScript">
+   function his()
+   {
+     alert("You have accessed "+history.length+" webpage this session")
+   }
+
+ </script> 
+ </head>
+
+ <body>
+  <form> 
+    <input type="Button" value="No of pages" onClick = "his()"><p>
+    <input type="Button" value = "back" onClick = "history.back()"><p>
+    <input type="Button" value = "forward" onClick = "history.forward()"><p>
+    <input type="Button" value = "refresh" onClick = "history.go(0)"><p>
+  <input type="Button" value = "two pages before" onClick = "history.go(-2)"><p>
+<input type="Button" value = "two pages after" onClick = "history.go(2)">
+
+  </form> 
+ </body>
+</html>

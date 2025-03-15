@@ -1,0 +1,14 @@
+class Ssample
+{
+  public static void main(String ar[])
+  {
+    /*String str ="JAVA ";
+    System.out.println(str);
+    str += "BEAN";
+    System.out.println(str);*/
+   StringBuffer str = new StringBuffer ("JAVA ");
+   System.out.println(str);
+   str.append("BEAN");
+   System.out.println(str);
+   }
+}

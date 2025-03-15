@@ -1,0 +1,9 @@
+class Manipulation
+{
+  public static void main(String arg[])
+  {
+    Addition a=new Addition();
+    a.Add(10,20);
+  }
+}
+    

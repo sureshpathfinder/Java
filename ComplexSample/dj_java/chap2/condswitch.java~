@@ -1,0 +1,32 @@
+import java.io.*;
+import java.util.*;
+public class condswitch
+{
+  public static void main(String args[])
+  {
+    Scanner obj=new Scanner(System.in);
+    char a=obj.next();
+    switch(a)
+    {
+      case 'a':
+        System.out.println("vowel");
+        break;
+      case 'e':
+        System.out.println("vowel");
+        break;
+      case 'i':
+        System.out.println("vowel");
+        break;
+      case 'o':
+        System.out.println("vowel");
+        break;
+      case 'u':
+        System.out.println("vowel");
+        break;
+      default:
+        System.out.println("Not vowel");
+    }
+  }
+}
+   
+                          

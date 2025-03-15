@@ -1,0 +1,14 @@
+//import java.io.*;
+//import java.util.*;
+class argu
+{
+  public static void main(String arg[])
+  {
+    String s=arg[0];
+    String s1=arg[1];
+    //System.out.println(s);
+    int a=Integer.parseInt(s);
+    int b=Integer.parseInt(s1);
+    System.out.println(a+b);
+  }
+}

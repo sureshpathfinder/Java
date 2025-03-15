@@ -1,0 +1,38 @@
+class MainClass
+{
+public static void main(String args[])
+{
+ClasS c=new ClasS();
+c.add();
+c.sub();
+c.div();
+}
+}
+
+class ClasS
+{
+int x,y,z=30;
+
+ClasS()
+{
+  x=10;
+  y=10;
+}
+
+void add()
+{
+System.out.println("Addition ="+(x+y));
+}
+
+void sub()
+{
+System.out.println("Subtraction ="+(x-y));
+}
+
+void div()
+{
+  System.out.println("Division ="+(z/x));
+}
+
+}
+

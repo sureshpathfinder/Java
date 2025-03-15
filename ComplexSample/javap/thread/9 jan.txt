@@ -1,0 +1,41 @@
+create or replace package pack as
+  procedure store(name varchar,job varchar,mgr number,dno number);
+  procedure modify(eno number,newsal number);
+end pack;
+/
+
+create or replace package body pack as
+  procedure sayhello as
+  begin
+    dbms_output.put_line('Hello From Package');
+  end sayhello;
+
+  procedure store(name varchar,job varchar,mgr number,dno number) as
+  tid number;
+  begin
+    sayhello;
+    select nvl(max(empno),0)+1 into tid from emp;
+    insert into emp(empno,ename,job,mgr,deptno) values(tid,name,job,mgr,dno);
+  end store;
+
+  procedure modify(eno number,newsal number) as
+  begin
+    update emp set sal=newsal where empno=eno;
+  end modify;
+end pack;
+/
+-----------------------
+show error
+
+-------------------
+set serveroutput on
+
+exec pack.store('bbbbb','CLERK',7866,20);
+
+select * from emp;
+
+exec pack.sayhello	--error
+
+exec pack.modify(9878,18000);
+
+select * from emp;

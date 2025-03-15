@@ -1,0 +1,54 @@
+class runintrface
+{
+  public static void main(String args[ ])
+  {
+    first f = new first();
+    second s = new second();
+    // Thread t1 = new Thread(f) ;
+    // Thread t2 = new Thread(s) ;
+    new Thread(s).start();
+    new Thread( f ).start();
+    //t2. start() ;
+    //t1. start() ;
+  }
+}
+
+class first implements Runnable
+{
+  public void run( )
+  {
+    for(int i=1; i<=10; i++)
+    {
+      System.out.println( "First : "+i ) ;
+      try
+      {
+        Thread. sleep(1000) ;
+      }
+      catch( InterruptedException ex)
+      {
+        System.out.println( "First Interrupted" ) ;
+      }
+    }
+  }
+}
+
+class second implements Runnable
+{
+  public void run( )
+  {
+    for (int i=30;i>=26;i--)
+    {
+      System.out.println( " Second: "+i ) ;
+      try
+      {
+        Thread. sleep(2000) ;
+      }
+      catch( InterruptedException ex )
+      {
+        System.out.println( "Second Interrupted" ) ;
+      }
+    }
+  }
+}
+
+

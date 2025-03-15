@@ -1,0 +1,16 @@
+import java.awt.*;
+import java.applet.*;
+public class IMG_app extends Applet
+  {
+        Image img;
+
+        public void init()
+        {
+                img=getImage(getCodeBase(),"worldcup.gif");
+        }
+        public void paint(Graphics g)
+        {
+                g.drawImage(img,20,20,this);
+        }
+  }
+//<applet code=imag width=400 height=400></applet>

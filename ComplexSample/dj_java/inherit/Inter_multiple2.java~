@@ -1,0 +1,4 @@
+interface Inter_multiple2
+{
+  int display(int i);
+}

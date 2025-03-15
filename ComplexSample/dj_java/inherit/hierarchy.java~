@@ -1,0 +1,41 @@
+class hierarchy
+{
+  public static void main(String s[])
+  {
+    son1 ss=new son1();
+    son2 s2=new son2();
+  }
+}
+
+class father
+{
+  float x,y;
+  father()
+  {
+    x=50.55;
+    y=60.55;
+  }
+}
+
+class son1 extends father
+{
+  float a=1.05;
+  void firstson()
+  {
+    System.out.println("Son 1="+(x+a));
+  }
+}
+
+class son2 extends father
+{
+  float b=2.05;
+  void secondson()
+  {
+    System.out.println("Son 2="+(y+b));
+  }
+}
+                      
+    
+    
+    
+    

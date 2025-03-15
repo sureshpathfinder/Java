@@ -1,0 +1,22 @@
+<html>
+<head>
+<script language="javascript">
+function cook()
+{
+var user=frm.txt1.value;
+var pwd=frm.txt2.value;
+document.cookie="name="+user+"\n"+"password="+pwd;
+alert("cookie created");
+}
+</script></head><body>
+<form name=frm>
+<pre>
+<big><b>enter the user name</b></big>
+<input type=text name=txt1>
+<big><b>enter password:</b></big>
+<input type=password name=txt2>
+<input type=button name=b value=click onclick=cook();>
+</center>
+</form>
+</body>
+</html>

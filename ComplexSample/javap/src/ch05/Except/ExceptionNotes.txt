@@ -1,0 +1,33 @@
+Exception:
+It is an object that describes an exception condition that has occured in a piece of code.  When an exception arises an object representing that exception is created  and thrown in the method that caused the error.  The method may choose to handle the exception by itself.  
+
+	
+base class- Object
+	      |
+	Throwable
+	   |           |  
+              Error    Exception
+
+
+Any abnormal condition is an Exception.
+
+Exception is of two types.
+1. System defined
+eg.
+ArithmeticException
+ArrayOutOfBoundsException
+ArrayStoreException
+IllegalArgumentException
+NumberFormatException
+ClassNotFoundException
+
+2. User Defined
+
+
+Exception can be handled in  following ways
+1. try
+2. catch
+3. throw, throws
+4. finally 
+
+

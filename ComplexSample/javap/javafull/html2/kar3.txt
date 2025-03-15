@@ -1,0 +1,70 @@
+Forms
+-----
+
+1.To start form
+<form>
+</form> within boby tags
+
+2. Input textbox
+<INPUT TYPE=TEXT>
+<INPUT TYPE=TEXT name=kar>(naming the textbox as kar)
+<INPUT TYPE=TEXT name=kar value="5/83">(to display 5/83 in text box)
+<INPUT TYPE=TEXT size=10>(giving the size to the textbox)
+<INPUT TYPE=TEXT maxlength=10>(we can type 10 characters only)
+<INPUT TYPE=password>(characters will be visible like *****)
+
+3.Radio buttons(allows the user to choose one of several options)
+<INPUT TYPE=RADIO NAME="FRIEND" value="Karthik" checked>Karthik 
+<INPUT TYPE=RADIO NAME="FRIEND" value="Jothi">Jothi 
+<INPUT TYPE=RADIO NAME="FRIEND" value="Meena">Meena
+
+u have to give the same name because u can choose only one option 
+
+4.Check Boxes
+( allow the user to choose one or more or all of the options.)
+<INPUT TYPE=CHECKBOX NAME="kar" VALUE="Karthik" CHECKED>Karthik
+<INPUT TYPE=CHECKBOX NAME="sen" VALUE="Senthil">Senthil
+<INPUT TYPE=CHECKBOX NAME="raj" VALUE="Rajesh" CHECKED>Rajesh
+<INPUT TYPE=CHECKBOX NAME="mut" VALUE="Muthu">Muthu
+u have to give thedifferent names because u can choose all options
+
+5.Pull Down List
+<SELECT NAME="Karthik" size=3>(first 3 options only visible)
+<OPTION value="kar">Karthik
+<OPTION value="raj">Rajesh
+<OPTION value="sen" Selected>Senthil(it will be  Selected)
+<OPTION value="sak">Sakthi
+</SELECT>
+
+6. TextArea 
+<TEXTAREA NAME="COMMENTS" ROWS=6 COLS=50 wrap=physical/off>
+</TEXTAREA>
+
+7. to submit the from to a script
+<INPUT TYPE=SUBMIT>
+
+
+8. clears all the  values typed in the textbox etc..
+<INPUT TYPE=RESET>
+
+wecan change the text in the buttons like
+<INPUT TYPE=SUBMIT VALUE="Send karthik">
+<INPUT TYPE=RESET VALUE="Clear karthik">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

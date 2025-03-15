@@ -1,0 +1,159 @@
+Tables
+-------
+1.To start table(within body tag)
+<table>
+</table>
+
+2. To have rows in a table
+<tr>
+</tr>
+
+3. To have data in the rows in a table
+should be with in <tr> tags
+<td>
+</td>
+
+4. To put border to the table
+<table border=1..n>(lower to bigger border>
+If you dont need border put <table border=0>
+
+5. SPECIFIYING THE TABLE SIZES
+<table width=100%> (table occupy the full browser in width >
+<table width=100> (table occupy only the 100 pixels in width>
+similarly
+<table Height=100%> (table occupy the full browser>
+<table height=100> (table occupy only the 100 pixels in height>
+
+6.Specifying where in the cell the data should appear(Horizontal Align)
+<TR>
+<TD ALIGN=CENTER/left/right>Karthik</TD>
+</TR>
+
+7.Specifying where data Should appear vertically in a cell.
+<TABLE BORDER=3 WIDTH=100 HEIGHT=75>
+<TR>
+<TD ALIGN=LEFT VALIGN=top/middle/BOTTOM>Karthik</TD>
+</TR>
+</TABLE>
+
+8.Inserting image in cell(table)
+<TABLE BORDER=3 WIDTH=100 HEIGHT=75>
+<TR>
+<TD ALIGN=LEFT VALIGN=MIDDLE>
+<IMG SRC="xxx.gif" WIDTH=32 HEIGHT=32>
+</TD>
+</TR>
+</TABLE>
+
+9.To specify another cell in a single row
+<TABLE BORDER=3 WIDTH=300 HEIGHT=75>
+<TR>
+<TD>Karthik</TD>
+<TD>M.C.A</TD>
+</TR>
+</TABLE>
+
+10. Dividing equally the cells  in a single row
+<TABLE BORDER=3 WIDTH=300 HEIGHT=75>
+<TR>
+<TD width=150/50%>Karthik</TD>
+<TD width=150/50%>M.C.A</TD>
+</TR>
+</TABLE>
+
+11. Adding another row in a table
+<TABLE BORDER=3 WIDTH=300 HEIGHT=75>
+<TR>
+<TD width=150/50%>Karthik</TD>
+<TD width=150/50%>M.C.A</TD>
+</TR>
+<TR>
+<TD width=150/50%>Raichel</TD>
+<TD width=150/50%>M.C.A</TD>
+</TR>
+</TABLE>
+
+12.CELLPADDING is the amount of space between the 
+border of the cell and the contents of the cell.
+
+<TABLE BORDER=3 CELLPADDING=12>
+<TR>
+<TD>Karthik</TD>
+<TD>CSC</TD>
+<TD>Maduravoyal</TD>
+</TR>
+</TABLE>
+
+13. Cellspacing is the amount of space between the 
+border of the cell and the border of the table.
+The default value for the CELLSPACING attribute is 2. 
+
+<TABLE BORDER=3 CELLSPACING=12>
+<TR>
+<TD>Karthik</TD>
+<TD>Sindhi</TD>
+<TD>College</TD>
+</TR>
+</table>
+
+14. Coloring cells in a table
+
+<TABLE BORDER=3 BGCOLOR="#FF6633">
+<TR BGCOLOR="#009900">
+<TD BGCOLOR="#9999FF">Karthik</TD>
+<TD>Babu</TD>
+<TD>Keerthi</TD>
+</TR>
+
+<TR>
+<TD>Abitha</TD>
+<TD>Rekha</TD>
+<TD>Kathija</TD>
+</TR>
+</TABLE>
+
+15.To avoid the empty space in the table in
+the absence of cell in coloumn.
+
+<TABLE BORDER=3>
+<TR>
+<TD COLSPAN=2>Karthik</TD>(here 2 specified will occupy 2 cells bykarthik cell)
+<TD>Manju</TD>
+</TR>
+
+<TR>
+<TD>Suja</TD>
+<TD>Padmasree</TD>
+<TD>Kanya</TD>
+</TR>
+</TABLE>
+
+Similarly Rowspan to occupy the cell in row
+
+16. Example for Rowspan and colspan
+<TABLE BORDER=3>
+
+<TR>
+<TD ROWSPAN=2>Vidhya</TD>
+<TD COLSPAN=2>Sujatha</TD>
+</TR>
+
+<TR>
+<TD>Shalini</TD>
+<TD>Megha</TD>
+</TR>
+
+</TABLE>
+
+
+
+
+
+
+
+
+
+
+
+
+

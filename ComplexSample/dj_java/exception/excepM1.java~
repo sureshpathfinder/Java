@@ -1,0 +1,21 @@
+import java.util.*;
+
+public class excepM1
+{
+  public static void main(String[] args) throws IOException
+  {
+      int a,b,c;
+      Scanner s=new Scanner(System.in);
+      //BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+      //a = Integer.parseInt(in.readLine());
+      //b = Integer.parseInt(in.readLine());
+      a=s.nextInt();
+      b=s.nextInt();
+      System.out.println("Result ="+(c=a+b));
+    }
+    /*catch(NumberFormatException ex)
+    {
+      System.out.println(ex + " is not a numeric value.");
+    }*/
+  }
+}

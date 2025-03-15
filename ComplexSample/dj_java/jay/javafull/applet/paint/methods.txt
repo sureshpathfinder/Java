@@ -1,0 +1,42 @@
+ import java.awt.*;
+import java.applet.*;
+
+public class  methods extends Applet {
+String  msg;
+
+public void init()
+   {
+     setBackground(Color.cyan);
+     setForeground(Color.red);
+     msg = "Inside init() -";
+  }
+
+public void start()
+  {
+    msg+= "Inside start()--";
+   }
+ public void paint(Graphics g)
+  {
+   msg+= "Inside paint().";
+   g.drawString(msg,10,30);
+  }
+public void repaint()
+{
+ msg+= "Inside Repaint().";
+}
+public void stop()
+{
+System.out.println("Stop");
+}
+
+public void destroy() {
+System.out.println("Destroy");
+}
+
+public void update()
+{
+ msg+= "Inside update().";
+}
+}
+//<applet code = "methods" width=300 height=350>
+//</applet>

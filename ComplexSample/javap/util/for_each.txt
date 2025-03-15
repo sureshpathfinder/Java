@@ -1,0 +1,4 @@
+# Only access: Elements can not be assigned to, eg, not to increment each element in a collection.
+# Only single structure: It's not possible to traverse two structures at once, eg, to compare two arrays.
+# Only single element: Use only for single element access, eg, not to compare successive elements.
+# Only forward: It's possible to iterate only forward by single steps.

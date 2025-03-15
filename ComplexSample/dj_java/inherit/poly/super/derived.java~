@@ -1,0 +1,23 @@
+class derived extends base
+{
+  derived()
+  {
+    super.a=10;
+    super.b=20;
+    super.c=30;
+  }
+  public static void main(String args[])
+  {
+    derived d=new derived();
+    d.display();
+  }
+}
+
+class base
+{
+  int a,b,c;
+  void display()
+  {
+    System.out.println(a+b+c);
+  }
+}

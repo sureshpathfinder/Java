@@ -1,0 +1,26 @@
+<html>
+ <head>
+  <title>Location Object</title>
+ <script language="JavaScript">
+  function loc()
+  {
+    with(document)
+    {
+      open("text/html")
+      write("<html><head><title>New Window</title></head>")
+      write("<body bgcolor='aqua'>")
+      write("Using the location object you have moved to a new location " + "<br>")
+      write("The pathname of this file is " + location.pathname + "<br>")
+      write("</body></html>")
+      close()    
+    }
+  }
+ </script>
+ </head>
+
+ <body>
+   <form>
+        <input type="button" value="Location" onClick="loc()">
+    </form>
+ </body>
+</html>

@@ -1,0 +1,20 @@
+public class Override2
+{
+
+  private void f() {
+    System.out.println("private f()");
+  }
+
+  public static void main(String[] args) {
+    Derived po= new Derived();
+    po.f();
+  }
+}
+
+class Derived extends Override2
+{
+  public void f() 
+  {
+    System.out.println("public f()");
+  }
+}

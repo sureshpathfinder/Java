@@ -1,0 +1,36 @@
+Java Networking
+----------------------
+
+Network - set of computer connected physically
+
+Protocol - set of rules to communicate
+
+http,ftp,udp,tcp/ip,nntp,smtp,telnet
+
+ipaddress - internet protocol address - identification for the system
+
+      127.0.0.1 255.255.255.255
+DNS - domain naming server - name given to the ipaddress
+
+portno - specific number given to application
+
+java.net.*
+------------
+
+InetAddress  - getLocalhost(),getByName(),getAllByName()
+
+DatagramPacket/DatagramSocket - udp
+
+server				client
+------				------
+ds = new DS(portno) 			ds1=new DS(portno)
+DP(data,length,ipaddrss,portno)		DP(data,length)
+ds.send(dp)			ds1.receive(dp);
+
+
+
+
+
+
+
+

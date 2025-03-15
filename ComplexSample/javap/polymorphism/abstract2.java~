@@ -1,0 +1,24 @@
+class abstract2
+{
+  public static void main()
+  {
+    Rectangle1 r= new Rectangle1();
+    r.setArea(2,3);
+    Triangle t=new Triangle();
+    t.setArea(3,4);
+  }
+}
+abstract class Base
+{
+  int length, breadth;
+  abstract int area(int a,);
+  public void setArea(int length, int breadth)
+  {
+   this.length = length;
+   this.breadth = breadth;
+   
+   pw.println("Calculating the area of a ..");
+   pw.println("The area is  ");
+   pw.println(area());
+ }
+}

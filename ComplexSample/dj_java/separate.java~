@@ -1,0 +1,7 @@
+public  class separate
+{
+  void display()
+  {
+    System.out.println("Separate class ");
+  }
+}

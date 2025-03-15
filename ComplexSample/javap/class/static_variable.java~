@@ -1,0 +1,24 @@
+class program
+{
+  public static void main(String ar[])
+  {
+    student s1=new student();
+    s1.get(1,"Ravi");
+    s1.disp();
+  }
+}
+class student
+{
+  int rno;
+ 
+  void disp()
+  {
+    a=4;
+    a++;
+  }
+  void disp()
+  {
+    System.out.println("="+rno);
+    System.out.println("Name="+name);
+  }
+}

@@ -1,0 +1,13 @@
+import java.util.StringTokenizer;
+
+class Str_User_Delimiter
+{
+  public static void main(String args[])
+  {
+    String s="Welcome:To,Java;Program";
+    StirngTokenizer s1=new StringTokenizer(s,":,;");
+    while(s.hasMoreTokens())
+      System.out.println(s1.nextToken());
+  }
+}
+      

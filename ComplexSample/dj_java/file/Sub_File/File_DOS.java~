@@ -1,0 +1,22 @@
+import java.io.*;
+
+public class File_DOS
+{
+  public static void main(String[] args) throws Exception 
+  {
+    try 
+    {
+      FileOutputStream fos = new FileOutputStream("hello.txt");
+      DataOutputStream dos = new DataOutputStream(fos);
+      dos.write("hai");
+      dos.write("dinesh");
+      dos.write(007);
+      dos.flush();
+      dos.close();
+    } 
+    catch (Exception e) 
+    {
+      System.out.println(e);
+    }
+  }
+}
