@@ -17,6 +17,15 @@ class EmployeeSorting {
 
         System.out.println("Sorted by Salary (Ascending):");
         sortedBySalary.forEach(System.out::println);
+
+         //Sort by Multiple Fields (Age & then Salary)
+        List<Employee> sortedByAgeThenSalary = employees.stream()
+        .sorted(Comparator.comparing(Employee::getAge)
+        .thenComparing(Employee::getSalary))
+        .collect(Collectors.toList());
+
+        System.out.println("\n \n Sort by Multiple Fields (Age & then Salary):");
+        sortedByAgeThenSalary.forEach(System.out::println);
     }
 }
 
