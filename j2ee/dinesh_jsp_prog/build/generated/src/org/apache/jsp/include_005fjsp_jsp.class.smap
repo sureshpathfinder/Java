@@ -1,0 +1,14 @@
+SMAP
+include_005fjsp_jsp.java
+JSP
+*S JSP
+*F
++ 0 include_jsp.jsp
+include_jsp.jsp
++ 1 table.jsp
+table.jsp
+*L
+5,4:49
+5#1,16:52
+8#0,12:67
+*E

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="2.1" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd">
+  <tlib-version>1.0</tlib-version>
+  <short-name>sampletld</short-name>
+  <uri>/tlds/sampleTLD</uri>
+  
+  <tag>
+      <name>helloWorld</name>
+      <tag-class>MY.HelloWorld</tag-class>
+      <info>Outputs HelloWorld in  Blue</info>
+  </tag>
+      
+      
+  <tag>
+      <name>haiTLD</name>
+      <tagclass>MY.attr_java_tag</tagclass>
+      <info>Attribute accessed in CUSTOM TAGS</info>
+      <attribute>
+          <name>size</name>
+          <required>false</required>
+      </attribute>
+  </tag>
+  
+  
+  
+  
+</taglib>

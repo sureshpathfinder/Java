@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>
+Ajax Select Student
+</title>
+<script type="text/javascript">
+
+function getStudent()
+{
+	var s_id=document.getElementsByName("id")[0].value;
+ if(window.XMLHttpRequest)
+ {  //code for IE7+,firefox,chrome,opers,safari
+	 xmlhttp=new XMLHttpRequest();
+ } 
+ else
+ {   //code for IE6,IE5
+	 xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+ }
+ xmlhttp.onreadystatechange=function()
+ {
+	 if(xmlhttp.readyState==4 && xmlhttp.status==200)                    // 4 to indicate request is processed and result has been sent 200 to indicate ok we can proceed
+	 {
+		 document.getElementById("print_student").innerHTML=xmlhttp.responseText;
+	 }
+   
+ }
+ xmlhttp.open("GET","select_ajax.jsp?t1="+s_id,true);
+ xmlhttp.send();
+}
+
+</script>
+</head>
+<body>
+Enter Student Id:<input type="text" name="id" value="" onkeyup="getStudent()"/>
+<!--<input type="button" value="Get Student" onclick="getStudent()"/>-->
+<p id="print_student">Student Details  will be displayed here!</p>
+</body>
+</html>
