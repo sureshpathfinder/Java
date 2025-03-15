@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>ss</title>
+<script language="javascript">
+function func1()
+{
+document.text="#FFFF00";
+document.bgcolor="#FFF050";
+}
+function func2()
+{
+document.bgColor="#FF00FF"
+}
+function func3()
+{
+document.bgColor="#FF0000"
+document.getElementById('ss').innerHTML="Hello World!";
+}
+function func4()
+{
+document.bgColor="#0099FF"
+document.getElementById('ss').innerHTML="Welcome";
+}
+
+/*function func12()
+{
+document.x.t1.focus();
+}*/
+</script>
+</head>
+<body  onKeyDown='func3()' onKeyUp='func4()' onResize="alert('The page is Resize');"  onUnload="alert('the page is closed');" onLoad="alert ('page is open')" >
+<p id="ss">welcome</p>
+
+<form name="x">
+<input type="text" value="Click"  / >
+<input type="text" value="Click" name="t1" onFocus="alert('text is clicked')"  / >
+<input type="button" value="Click" onClick="alert('Mouse is clicked')" / >
+<input type="button" value="Double Click" onDblClick=
+"alert('Mouse is clicked')" />
+<input type="button" value="Move here" onMouseover="alert('Mouse is clicked')" />
+<input type="button" value="Mouse Out" onMouseout="alert('Mouse is out')"/>
+</body>
+</html>	

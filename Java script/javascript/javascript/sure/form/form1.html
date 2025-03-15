@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<form action="sample.html" method="post" name="f1">
+Enter user name		<input type="text" name="s" >
+Enter user pwd		<input type="text" name="xx" id="i" />
+<input type="submit" name="sub" value="Click" onClick="return tab1(this.form)">
+</form>
+<script language="javascript" type="text/javascript">
+  
+function tab1(form)
+{
+	var x=form.s.value;
+	var y=document.getElementById("i").value;
+	//var y=form.i.value;
+	if((x=="")&&(y==""))
+	{
+		alert("enter the website name");
+		return false;
+	}
+	
+}
+</script>
+</body>
+</html>

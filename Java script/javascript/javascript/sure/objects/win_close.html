@@ -1,0 +1,44 @@
+<html>
+<body>
+
+<p id="ss">welcome to world</p>
+
+<script type="text/javascript">
+window.status="welcome";
+document.write("Height="+document.innerWidth);
+
+function openWin()
+{
+var w=window.open('','','width=200,height=100');
+w.document.write("<p>This is 'myWindow' </p>");
+//w.focus();
+
+//var t=setTimeout(w.close(),5000);
+
+}
+function show()
+{
+var x=window.open('','','width=200,height=100');
+s=document.getElementById('ss').innerHTML;
+
+x.document.write(s);
+x.print();
+}
+
+function closewin()
+{
+w.close();
+}
+
+</script>
+</head>
+<body>
+
+<input type="button" value="Open window" onclick="openWin()" />
+<input type="button" value="print" onclick="print()" />
+<input type="button" value="print window" onclick="show()" />
+
+<input type="button" value="Close window" onclick="closewin()" />
+
+</body>
+</html>

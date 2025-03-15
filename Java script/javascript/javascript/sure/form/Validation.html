@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<form action="sam.php" method="get" name="form1">
+Enter Rno<input type="text" name="n1" id="t1" /><br />
+Enter Name<input type="text" name="n2" id="t2"/><br />
+Enter Salary<input type="text" name="n3" id="t3"/><br />
+Enter age<input type="text" name="n4" id="t4"/><br />
+<input type="submit" onclick="return t(this.form)"/><br />
+</form>
+
+<script language="javascript" type="text/javascript">
+
+
+function t(form)
+{
+var x=eval(document.getElementById("t1").value);
+//var x=form.n1.value;
+var y=form.n2.value;
+var z=eval(form.n3.value);
+var a=eval(form.n4.value);
+if(x=="")
+{
+alert("enter the Rno");
+return false;
+}
+
+if(y=="")
+{
+alert("enter the Name");
+return false;
+}
+if(z<3000)
+{
+alert("enter the Salary should be greater than 3000");
+return false;
+}
+if(a<18)
+{
+alert("enter the age should be 18 > age");
+return false;
+}
+}
+</script>
+
+</body>
+</html>

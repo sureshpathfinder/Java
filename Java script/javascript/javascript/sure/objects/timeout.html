@@ -1,0 +1,25 @@
+<html>
+<head>
+<script language="javascript">
+function disp()
+{
+var t=setTimeout("alert('welcome to my class')",5000);
+}
+function start()
+{
+setInterval("datedisp();",1000);
+}
+
+function datedisp()
+{
+dt=new Date();
+document.getElementById("d").innerHTML=dt;
+}
+
+</script>
+</head>
+<body>
+<input type="button"  value="Alert message " onClick="disp()"/>
+<input type="button"  value="Display Date" onClick="start()"/>
+<p id="d">Date is displayed here</p>
+</html>

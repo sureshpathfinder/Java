@@ -1,0 +1,23 @@
+<html>
+  <head>
+  <title>Image Rotate</title>
+  </head>
+  <body>
+<div id="home-photo"><img src="./images/image1.jpg" id="photo" alt=""></div>
+
+<script language="JavaScript">
+var ImageArr1 = new Array("./images/image1.jpg","./images/image2.jpg","./images/image3.jpg","./images/image4.jpg");
+var ImageHolder1 = document.getElementById("photo");
+function RotateImages(whichHolder,Start)
+	{
+			var a = eval("ImageArr"+whichHolder);
+			var b = eval("ImageHolder"+whichHolder);
+			if(Start>=a.length)
+			Start=0;
+			b.src = a[Start];
+			window.setTimeout("RotateImages("+whichHolder+","+ (Start+1)+")",3000);
+		}
+		RotateImages(1,0);
+		</script> 
+	</body>
+</html>

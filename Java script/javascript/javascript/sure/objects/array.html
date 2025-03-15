@@ -1,0 +1,46 @@
+<html>
+<body>
+
+<script type="text/javascript">
+var mycars = new Array();
+mycars[0] = "Tata Nano";
+mycars[1] = "Wagnor";
+mycars[2] = "I10";
+mycars[3]="Maruti";
+
+var s = new Array();
+s[0] = "ss4";
+s[1] = "Hyndai";
+s.push("Tata nano");
+s.pop();
+
+document.write("<br> array of s=<br>");
+
+for(x in s)
+	document.write(s[x]  +"  ");
+
+
+document.write("  "+mycars[3]+"<br><hr>");
+for (i=0;i<mycars.length;i++)
+{
+document.write(mycars[i] + "<br />");
+}
+
+mycars.sort();
+document.write("<br> ascending order<br>");
+for (i=0;i<mycars.length;i++)
+{
+document.write(mycars[i] + "<br />");
+}
+
+c=mycars.concat(s);
+document.write("<br> After Join<br>");
+for (i=0;i<c.length;i++)
+{
+document.write(c[i] + "<br />");
+}
+
+</script>
+
+</body>
+</html>
